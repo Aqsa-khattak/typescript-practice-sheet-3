@@ -763,3 +763,70 @@
 //  console.log(dateFormat(2005 , 8 , 8));  //8/8/2005
 //  console.log(dateFormat(new Date()));    //8/9/2026
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// git pull origin main --rebase
+// Yeh kya karega? Yeh GitHub se README file download karke aapke local code mein shamil kar dega.
+// Iske baad apna code push kar dein
+// git push -u origin main
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Get Methods (Date se information nikalna)
+
+// const d = new Date();
+
+// console.log(d.getDate());   //9
+// console.log(d.getDay());   // 3 // Hafte ka din (0-6) -> 0 = Sunday, 1 = Monday 
+// console.log(d.getFullYear()); // 2026
+// console.log(d.getHours());   // 1 // Ghante (0-23)
+// console.log(d.getMinutes());  // Minutes (0-59)
+// console.log(d.getMonth());  //Mahina (0-11) -> 0 = Jan, 8 = Sep
+// console.log(d.getSeconds()); // Seconds (0-59)
+// console.log(d.getTime());  //1 Jan 1970 se ab tak ke Total Milliseconds (Timestamp)
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Set Methods (Date badalna ya set karna)
+
+// const d = new Date();
+
+// d.setDate(23);
+// d.setFullYear(2000);
+// d.setHours(12);
+// d.setMonth(9);
+
+// console.log(d);  //Mon Oct 23 2000 12:01:18 GMT+0500 (Pakistan Standard Time)
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Formatting Methods (Date ko achi tarah print karna)
+// Default date bohot lambi print hoti hai. In methods se aap usko clean format mein la sakte hain
+
+// const d = new Date();
+
+// console.log(d.toDateString());  //Wed Sep 09 2026 ONLY DATE 
+// console.log(d.toISOString());   //date ko ek International Standard Format (ISO 8601) mein convert karna.
+
+// //2026-09-08T21:09:28.923Z  //Year-Month-Day - 2026-09-08
+//                             //T - Time ka separator (yeh batata hai ke yahan se time shuru ho raha hai).
+//                             //Hours : Minutes : Seconds . Milliseconds. - 21:09:28.923
+                            
+//  console.log(d.toLocaleDateString()); // Local country format - 9/9/2026
+//  console.log(d.toTimeString()); //02:12:51 - ONLY TIME
+ 
+ ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//CHANGES POST KRNE KE JO REPO ALREADY POST HO GITHUB PR 
+
+// # Step 1: Tamam new changes ko select karein
+// git add .
+
+// # Step 2: Changes ka message save karein (quotes ke andar apna message likhein)
+// git commit -m "Updated code and fixed bugs"
+
+// # Step 3: GitHub par bhej dein
+// git push
+
+
+
